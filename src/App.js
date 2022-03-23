@@ -5,6 +5,7 @@ import DisplayPost from "./pages/display post/DisplayPost";
 import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <DisplayPost /> */}
       {/* <Write /> */}
       {/* <Settings /> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </>
   );
 }
