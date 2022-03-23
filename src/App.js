@@ -1,11 +1,12 @@
 import "./App.css";
-import NavBar from "./NavBar/NavBar";
+import NavBar from "./navbar/NavBar";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
       <NavBar />
-      <h1>Hardik's Blog</h1>
+      <Home />
     </>
   );
 }

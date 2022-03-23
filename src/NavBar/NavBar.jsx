@@ -20,8 +20,8 @@ function NavBar() {
       </div>
       <div className="topRight">
         <img
-        className="topImg"
-          src="https://drive.google.com/uc?export=view&id=1gVAoSelnf0giUktjqJOXdcgLay8ZDhUz"
+          className="topImg"
+          src="https://images.pexels.com/photos/220974/pexels-photo-220974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="me"
         />
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
