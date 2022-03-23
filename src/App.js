@@ -7,17 +7,34 @@ import Settings from "./pages/settings/Settings";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
+  const user = false;
   return (
-    <>
+    <Router>
       <NavBar />
-      {/* <Home /> */}
-      {/* <DisplayPost /> */}
-      {/* <Write /> */}
-      {/* <Settings /> */}
-      {/* <Login /> */}
-      <Register />
-    </>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/register">
+          {user ? <Home /> : <Register />}
+        </Route>
+        <Route exact path="/login">
+          {user ? <Home /> : <Login />}
+        </Route>
+        <Route exact path="/write">
+          {user ? <Write /> : <Register />}
+        </Route>
+        <Route exact path="/settings">
+          {user ? <Settings /> : <Register />}
+        </Route>
+        <Route exact path="/post/:postId">
+          <DisplayPost />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
